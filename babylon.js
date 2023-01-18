@@ -121,6 +121,15 @@ var createScene = function () {
 		target3.influence = value;
     });        
 
+    var beta;
+    var gamma;
+
+    window.addEventListener('deviceorientation', function(ev){
+        beta = ev.beta;
+        gamma = ev.gamma;
+    });
+
+    
    
 
     return scene;
